@@ -2,9 +2,10 @@
 # BASIC SITE SETTINGS
 # =========================================================
 
-locale: "en"
-site_theme: "default"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
 
+locale: "en-US"
 title: "IEEE GRSS UNICAMP Student Chapter"
 title_separator: "·"
 name: "GRSS UNICAMP"
@@ -12,7 +13,7 @@ name: "GRSS UNICAMP"
 description: "IEEE Geoscience and Remote Sensing Society Student Chapter at the University of Campinas (UNICAMP)"
 
 url: https://grssunicamp.github.io
-repository: "https://github.com/grssunicamp/grssunicamp.github.io"
+repository: "grssunicamp/grssunicamp.github.io"
 
 timezone: America/Sao_Paulo
 
@@ -21,57 +22,16 @@ timezone: America/Sao_Paulo
 # =========================================================
 
 author:
-  avatar: "Logo_Fundo_branco.png"
   name: "IEEE GRSS UNICAMP Student Chapter"
+  avatar: "/assets/images/Logo_Fundo_branco.png"
   location: "Campinas, São Paulo, Brazil"
   employer: "University of Campinas (UNICAMP)"
   uri: https://www.ieee-grss.org
   email: "grssunicamp2@gmail.com"
-  instagram: "https://www.instagram.com/grss_unicamp/"
+  instagram: "grss_unicamp"
 
 # =========================================================
-# FILE HANDLING
-# =========================================================
-
-include:
-  - .htaccess
-  - _pages
-
-exclude:
-  - .github
-  - .bundle
-  - node_modules
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-  - README
-  - Dockerfile
-  - package.json*
-  - gulpfile.js
-  - Gruntfile.js
-  - Capfile
-  - log
-  - tmp
-
-encoding: "utf-8"
-markdown_ext: "md,markdown"
-
-# =========================================================
-# MARKDOWN / CONVERSION
-# =========================================================
-
-markdown: kramdown
-highlighter: rouge
-excerpt_separator: "\n\n"
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  toc_levels: 1..6
-
-# =========================================================
-# DEFAULT PAGE SETTINGS
+# DEFAULTS
 # =========================================================
 
 defaults:
@@ -83,7 +43,16 @@ defaults:
       author_profile: false
 
 # =========================================================
-# SASS / CSS
+# PLUGINS (GITHUB PAGES SAFE)
+# =========================================================
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# =========================================================
+# SASS
 # =========================================================
 
 sass:
@@ -95,20 +64,3 @@ sass:
 # =========================================================
 
 permalink: pretty
-
-# =========================================================
-# PLUGINS (GITHUB PAGES SAFE)
-# =========================================================
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-redirect-from
-
-# =========================================================
-# HTML COMPRESSION
-# =========================================================
-
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
