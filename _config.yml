@@ -2,14 +2,14 @@
 # BASIC SITE SETTINGS
 # =========================================================
 
-locale: "en-US"
+locale: "en"
 site_theme: "default"
 
 title: "IEEE GRSS UNICAMP Student Chapter"
 title_separator: "·"
-name: &name "GRSS UNICAMP"
+name: "GRSS UNICAMP"
 
-description: &description "IEEE Geoscience and Remote Sensing Society Student Chapter at the University of Campinas (UNICAMP)"
+description: "IEEE Geoscience and Remote Sensing Society Student Chapter at the University of Campinas (UNICAMP)"
 
 url: https://grssunicamp.github.io
 repository: "https://github.com/grssunicamp/grssunicamp.github.io"
@@ -28,8 +28,6 @@ author:
   uri: https://www.ieee-grss.org
   email: "grssunicamp2@gmail.com"
   instagram: "https://www.instagram.com/grss_unicamp/"
-  LinkedIn: "https://www.linkedin.com/company/grss-unicamp-student-chapter"
-  Facebook: "https://www.facebook.com/grssunicamp/"
 
 # =========================================================
 # FILE HANDLING
@@ -38,7 +36,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - files
 
 exclude:
   - .github
@@ -48,7 +45,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README
-  - LICENSE
   - Dockerfile
   - package.json*
   - gulpfile.js
