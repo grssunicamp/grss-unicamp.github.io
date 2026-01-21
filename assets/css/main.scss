@@ -1,6 +1,7 @@
 /*
  * =======================================================
  * GRSS UNICAMP — MAIN STYLESHEET
+ * (SAFE FOR ACADEMIC PAGES)
  * =======================================================
  */
 
@@ -8,8 +9,8 @@
   "vendor/breakpoint/breakpoint",
 
   "themes",
-  "theme/default_light",
-  "theme/default_dark",
+  "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
   "include/mixins",
   "vendor/susy/susy",
@@ -30,6 +31,7 @@
   "layout/page",
   "layout/archive",
   "layout/sidebar",
+  "layout/json_cv",
 
   "vendor/font-awesome/fontawesome",
   "vendor/font-awesome/solid",
@@ -37,7 +39,7 @@
 ;
 
 /* =======================================================
-   COLOR PALETTE — IEEE BLUE
+   COLOR PALETTE — IEEE BLUE (CUSTOM ONLY)
    ======================================================= */
 
 :root {
@@ -48,7 +50,7 @@
 }
 
 /* =======================================================
-   TYPOGRAPHY
+   GLOBAL TWEAKS (NON-DESTRUCTIVE)
    ======================================================= */
 
 body {
@@ -68,7 +70,7 @@ a:hover {
 }
 
 /* =======================================================
-   HERO / BANNER
+   HERO / BANNER (HOME)
    ======================================================= */
 
 .grss-hero {
@@ -77,13 +79,14 @@ a:hover {
   margin: 2.5rem auto;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .grss-hero img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .grss-hero-text {
@@ -110,10 +113,11 @@ a:hover {
 
 .grss-hero-text p {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
+  opacity: 0.95;
 }
 
 /* =======================================================
-   SECTIONS
+   CONTENT SECTIONS
    ======================================================= */
 
 .grss-section {
@@ -133,7 +137,7 @@ a:hover {
 }
 
 /* =======================================================
-   IMAGE CAROUSEL
+   IMAGE CAROUSEL (CSS ONLY, RESPONSIVE)
    ======================================================= */
 
 .grss-carousel {
@@ -141,7 +145,7 @@ a:hover {
   margin: 2.5rem auto;
   overflow: hidden;
   border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .grss-carousel-track {
@@ -152,14 +156,15 @@ a:hover {
 
 .grss-carousel-track img {
   width: 50%;
+  height: auto;
   object-fit: cover;
 }
 
 /* Carousel animation */
 @keyframes grssCarousel {
-  0% { transform: translateX(0); }
-  45% { transform: translateX(0); }
-  55% { transform: translateX(-50%); }
+  0%   { transform: translateX(0); }
+  45%  { transform: translateX(0); }
+  55%  { transform: translateX(-50%); }
   100% { transform: translateX(-50%); }
 }
 
@@ -173,7 +178,7 @@ a:hover {
 }
 
 /* =======================================================
-   RESPONSIVE
+   RESPONSIVE ADJUSTMENTS
    ======================================================= */
 
 @media (max-width: 768px) {
