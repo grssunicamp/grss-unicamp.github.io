@@ -19,12 +19,12 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37423b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #5fcf80; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  --default-color: #2b2b2b;
+  --heading-color: #03433c;     /* IEEE Blue */
+  --accent-color: #053451;      /* Dark Green GRSS */
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -1886,4 +1886,56 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+/* =====================================================
+   IEEE GRSS UNICAMP – Modern Style Enhancements
+===================================================== */
+
+/* Page title with gradient */
+.page-title .heading {
+  background: linear-gradient(135deg, #003B5C, #0B5D1E);
+}
+
+/* Hero text */
+.hero h2 {
+  font-size: 56px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 900px;
+  margin: 15px auto 0 auto;
+}
+
+/* Cards (Events, Team) */
+.card,
+.member {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Event cards shadow */
+.events .card-body {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Team images round + modern */
+.trainers .member .member-img {
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Buttons */
+.btn,
+button {
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Section spacing */
+.section {
+  padding: 90px 0;
 }

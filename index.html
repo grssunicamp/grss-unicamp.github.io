@@ -19,10 +19,23 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+  body {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  section, div {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+</style>
+
 </head>
 
 <body class="index-page">
@@ -32,7 +45,7 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <a href="index.html" class="logo d-flex align-items-center">
-      <img src="assets/img/GRSS/logo_transparencia.png" alt="IEEE GRSS UNICAMP" style="height:40px; margin-right:10px;">
+      <img src="assets/img/GRSS/logo_transparencia.png" alt="IEEE GRSS STUDENT CHAPTER UNICAMP" style="height:40px; margin-right:10px;">
       <h1 class="sitename" style="color:#00629B; font-size:22px;">IEEE GRSS UNICAMP</h1>
     </a>
 
@@ -57,7 +70,7 @@
   <!-- GIF -->
   <img
     src="assets/img/GRSS/Inicial_gif.gif"
-    alt="IEEE GRSS UNICAMP"
+    alt="IEEE GRSS STUDENT CHAPTER UNICAMP"
     style="
       position:absolute;
       top:0;
@@ -79,54 +92,102 @@
     background:rgba(0,59,92,0.55);
     z-index:2;
   "></div>
+<!-- Texto -->
+<div class="container text-center" style="
+  position:relative;
+  z-index:3;
+  top:50%;
+  transform:translateY(-50%);
+">
 
-  <!-- Texto -->
-  <div class="container text-center" style="
-    position:relative;
-    z-index:3;
-    top:50%;
-    transform:translateY(-50%);
-    color:white;
+  <h1 style="
+    font-size:64px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#FFFFFF;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    margin-bottom:20px;
   ">
-    <h2 style="font-size:48px; font-weight:700;">
-      IEEE GRSS UNICAMP<br>Student Chapter
-    </h2>
+    IEEE GRSS UNICAMP<br>
+    <span style="
+      font-size:42px;
+      font-weight:600;
+      color:#E6F2FF;
+    ">
+      Student Chapter
+    </span>
+  </h1>
 
-    <p style="font-size:18px; max-width:800px; margin:20px auto; color:#e0e0e0;">
-      Advancing geoscience and remote sensing through student-led activities,
-      research and outreach.
-    </p>
-  </div>
+  <p style="
+    font-size:22px;
+    max-width:900px;
+    margin:0 auto;
+    color:#F2F6FA;
+    line-height:1.5;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+  ">
+    Advancing geoscience and remote sensing through student-led activities,
+    research and outreach.
+  </p>
+
+</div>
+
 
 </section>
 
 <!-- ======= ABOUT ======= -->
 <section id="about" class="section">
 
-  <div class="container" data-aos="fade-up">
+  <div class="container">
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
+    <div class="row align-items-center justify-content-center">
 
-        <h3 style="color:#00629B;">About Us</h3>
+      <!-- LOGO -->
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <img 
+          src="assets/img/GRSS/logo_transparencia.png"
+          alt="IEEE GRSS UNICAMP Student Chapter"
+          style="
+            max-width:220px;
+            width:100%;
+          "
+        >
+      </div>
+
+      <!-- TEXTO -->
+      <div class="col-lg-8">
+
+        <h3 style="color:#00629B; margin-bottom:20px;">
+          About the IEEE GRSS UNICAMP Student Chapter
+        </h3>
 
         <p>
-          The IEEE Geoscience and Remote Sensing Society (GRSS) UNICAMP Student Chapter
-          is a student-led organization dedicated to promoting education, research
-          and scientific exchange in geoscience, remote sensing and Earth observation.
+          The <strong>IEEE Geoscience and Remote Sensing Society (GRSS) UNICAMP Student Chapter</strong>
+          is a Brazilian student organization based at the <strong>University of Campinas (UNICAMP)</strong>,
+          one of the leading research universities in Latin America.
         </p>
 
         <p>
-          Our activities include technical seminars, workshops, outreach initiatives
-          and collaborative events connecting students, researchers and professionals.
+          Founded in <strong>2010</strong>, the chapter is composed of undergraduate and graduate students
+          from <strong>Geology and Geography</strong>, and is officially sponsored by the
+          <strong>IEEE Geoscience and Remote Sensing Society</strong>.
+        </p>
+
+        <p>
+          Our mission is to promote and support academic, technical and outreach activities related to
+          <strong>remote sensing, geoprocessing, Earth observation</strong> and the
+          <strong>dissemination of emerging technologies and information services</strong>,
+          with a strong focus on applications relevant to Brazil and South America.
         </p>
 
       </div>
+
     </div>
 
   </div>
 
 </section>
+
 
 <!-- ======= EVENTS PREVIEW ======= -->
 <section id="events-preview" class="section light-background">
@@ -174,6 +235,44 @@
 
 </section>
 
+  <!-- ======= INSTAGRAM PREVIEW ======= -->
+<section id="instagram" class="section light-background">
+  <div class="container">
+
+    <div class="section-title text-center">
+      <h2>On Instagram</h2>
+      <p>Highlights from our recent activities</p>
+    </div>
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/p/DSOAwDrCtpX/"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DRMtPs-DfCf/"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/p/DRF-4PGDx_A/"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ======= END INSTAGRAM PREVIEW ======= -->
+
 <!-- ======= JOIN US ======= -->
 <section id="join-us" class="section">
 
@@ -220,7 +319,6 @@
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
