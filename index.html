@@ -11,7 +11,7 @@
   <meta name="keywords" content="IEEE, GRSS, UNICAMP, Remote Sensing, Geoscience">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/GRSS/logo_transparencia.png" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,11 +28,12 @@
 <body class="index-page">
 
 <!-- ======= HEADER ======= -->
-<header id="header" class="header d-flex align-items-center sticky-top">
+<header id="header" class="header d-flex align-items-center sticky-top" style="background:white;">
   <div class="container d-flex align-items-center justify-content-between">
 
     <a href="index.html" class="logo d-flex align-items-center">
-      <h1 class="sitename">IEEE GRSS UNICAMP</h1>
+      <img src="assets/img/GRSS/logo_transparencia.png" alt="IEEE GRSS UNICAMP" style="height:40px; margin-right:10px;">
+      <h1 class="sitename" style="color:#00629B; font-size:22px;">IEEE GRSS UNICAMP</h1>
     </a>
 
     <nav id="navmenu" class="navmenu">
@@ -51,16 +52,47 @@
 <main class="main">
 
 <!-- ======= HERO ======= -->
-<section id="hero" class="hero section dark-background">
+<section id="hero" style="position:relative; height:100vh; overflow:hidden;">
 
-  <img src="assets/img/GRSS/Inicial_gif.gif" alt="IEEE GRSS UNICAMP" data-aos="fade-in">
+  <!-- GIF -->
+  <img
+    src="assets/img/GRSS/Inicial_gif.gif"
+    alt="IEEE GRSS UNICAMP"
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:1;
+    "
+  >
 
-  <div class="container text-center">
-    <h2 data-aos="fade-up" data-aos-delay="100">
+  <!-- Overlay azul IEEE -->
+  <div style="
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,59,92,0.55);
+    z-index:2;
+  "></div>
+
+  <!-- Texto -->
+  <div class="container text-center" style="
+    position:relative;
+    z-index:3;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+  ">
+    <h2 style="font-size:48px; font-weight:700;">
       IEEE GRSS UNICAMP<br>Student Chapter
     </h2>
 
-    <p data-aos="fade-up" data-aos-delay="200">
+    <p style="font-size:18px; max-width:800px; margin:20px auto; color:#e0e0e0;">
       Advancing geoscience and remote sensing through student-led activities,
       research and outreach.
     </p>
@@ -69,14 +101,14 @@
 </section>
 
 <!-- ======= ABOUT ======= -->
-<section id="about" class="about section">
+<section id="about" class="section">
 
   <div class="container" data-aos="fade-up">
 
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
 
-        <h3>About Us</h3>
+        <h3 style="color:#00629B;">About Us</h3>
 
         <p>
           The IEEE Geoscience and Remote Sensing Society (GRSS) UNICAMP Student Chapter
@@ -102,7 +134,7 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title text-center">
-      <h2>Events</h2>
+      <h2 style="color:#00629B;">Events</h2>
       <p>Upcoming and recent activities</p>
     </div>
 
@@ -131,7 +163,11 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="events.html" class="btn btn-primary">See all events</a>
+      <a href="events.html"
+         class="btn"
+         style="border:2px solid #00629B; color:#00629B;">
+         See all events
+      </a>
     </div>
 
   </div>
@@ -143,7 +179,7 @@
 
   <div class="container text-center" data-aos="fade-up">
 
-    <h3>Join Us</h3>
+    <h3 style="color:#00629B;">Join Us</h3>
 
     <p>
       Interested in geoscience, remote sensing and Earth observation?
@@ -151,10 +187,15 @@
     </p>
 
     <div class="d-flex justify-content-center gap-3 mt-3">
-      <a href="mailto:grss@ige.unicamp.br" class="btn btn-outline-primary">
+      <a href="mailto:grss@ige.unicamp.br"
+         class="btn"
+         style="border:2px solid #00629B; color:#00629B;">
         <i class="bi bi-envelope"></i> Email
       </a>
-      <a href="https://www.instagram.com/grss_unicamp/" target="_blank" class="btn btn-outline-primary">
+      <a href="https://www.instagram.com/grss_unicamp/"
+         target="_blank"
+         class="btn"
+         style="border:2px solid #00629B; color:#00629B;">
         <i class="bi bi-instagram"></i> Instagram
       </a>
     </div>
@@ -166,10 +207,10 @@
 </main>
 
 <!-- ======= FOOTER ======= -->
-<footer id="footer" class="footer light-background">
+<footer id="footer" class="footer" style="background:#003B5C; color:white;">
 
   <div class="container text-center">
-    <p>
+    <p style="margin:0;">
       © IEEE GRSS UNICAMP Student Chapter<br>
       University of Campinas (UNICAMP)
     </p>
