@@ -7,14 +7,17 @@ author_profile: false
 
 ## Upcoming Events
 
-### Event Title
-Date – Location  
-Short description of the event.
+### Event title
+**Date – Location**
+
+Short description of the event, including the main topic and target audience.
 
 ---
 
 ## Past Events
 
-### Event Title
-Date  
-Link to material or recording.
+### Event title
+**Date**
+
+Short description of the event.  
+[Slides / recording / materials](#)

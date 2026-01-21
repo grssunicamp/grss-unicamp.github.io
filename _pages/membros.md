@@ -9,21 +9,25 @@ author_profile: false
 
 ### Chair
 **Name**  
-Program – short description of research or activities.
+Program / research area  
+Short description of academic interests or activities.
 
 ### Vice-Chair
 **Name**  
-Program – short description.
+Program / research area  
 
 ### Secretary
 **Name**  
-Program – short description.
+Program / research area  
 
 ---
 
-## Members
+## Chapter Members
 
 ### Member Name
 Program / Area  
-Short description (2–3 lines).
+Short description of interests (2–3 lines).
 
+### Member Name
+Program / Area  
+Short description of interests (2–3 lines).
