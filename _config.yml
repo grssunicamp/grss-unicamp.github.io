@@ -1,17 +1,28 @@
-# Basic Site Settings
-locale: "pt-BR"
+# =========================================================
+# BASIC SITE SETTINGS
+# =========================================================
+
+locale: "en-US"
 site_theme: "default"
+
 title: "IEEE GRSS UNICAMP Student Chapter"
-title_separator: "|"
+title_separator: "·"
 name: &name "GRSS UNICAMP"
+
 description: &description "IEEE Geoscience and Remote Sensing Society Student Chapter at the University of Campinas (UNICAMP)"
+
 url: https://grssunicamp.github.io
-repository: "https://grssunicamp.github.io"
+repository: "https://github.com/grssunicamp/grssunicamp.github.io"
+
+timezone: America/Sao_Paulo
+
+# =========================================================
+# AUTHOR / SIDEBAR (INSTITUTIONAL)
+# =========================================================
 
 author:
   avatar: "Logo_Fundo_branco.png"
   name: "IEEE GRSS UNICAMP Student Chapter"
-  bio: "The GRSS UNICAMP Student Chapter is a group composed of geology and geography students sponsored by the IEEE Geoscience and Remote Sensing Society. Founded in 2010, the chapter aims to promote and support activities related to remote sensing and geoprocessing, as well as the dissemination of new technologies and information services."
   location: "Campinas, São Paulo, Brazil"
   employer: "University of Campinas (UNICAMP)"
   uri: https://www.ieee-grss.org
@@ -20,65 +31,52 @@ author:
   LinkedIn: "https://www.linkedin.com/company/grss-unicamp-student-chapter"
   Facebook: "https://www.facebook.com/grssunicamp/"
 
+# =========================================================
+# FILE HANDLING
+# =========================================================
 
-# Reading Files
 include:
   - .htaccess
   - _pages
   - files
+
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
   - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
+  - .bundle
   - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
   - vendor
-keep_files:
-  - .git
-  - .svn
+  - Gemfile
+  - Gemfile.lock
+  - README
+  - LICENSE
+  - Dockerfile
+  - package.json*
+  - gulpfile.js
+  - Gruntfile.js
+  - Capfile
+  - log
+  - tmp
+
 encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "md,markdown"
 
+# =========================================================
+# MARKDOWN / CONVERSION
+# =========================================================
 
-# Conversion
 markdown: kramdown
 highlighter: rouge
-lsi: false
 excerpt_separator: "\n\n"
-incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
   toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
+# =========================================================
+# DEFAULT PAGE SETTINGS
+# =========================================================
 
 defaults:
   - scope:
@@ -86,72 +84,34 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
+# =========================================================
+# SASS / CSS
+# =========================================================
 
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
+# =========================================================
+# OUTPUT
+# =========================================================
 
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink: pretty
 
+# =========================================================
+# PLUGINS (GITHUB PAGES SAFE)
+# =========================================================
 
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
-# Mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+# =========================================================
+# HTML COMPRESSION
+# =========================================================
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
