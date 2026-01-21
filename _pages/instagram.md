@@ -9,7 +9,7 @@ author_profile: false
 
 <div style="max-width:900px; margin:auto;">
   <iframe 
-    src="https://www.instagram.com/grss_unicamp/embed"
+    src="https://www.instagram.com/grss_unicamp"
     width="100%" 
     height="800" 
     frameborder="0" 

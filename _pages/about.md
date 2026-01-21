@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 <div class="grss-hero">
-  <img src="/images/Img_apresentacao.jpg" alt="IEEE GRSS UNICAMP banner">
+  <img src="images/Img_apresentaçao.jpg" alt="IEEE GRSS UNICAMP banner">
   <div class="grss-hero-text">
     <h1>IEEE GRSS UNICAMP</h1>
     <p>Geoscience and Remote Sensing Student Chapter</p>
