@@ -1,18 +1,10 @@
-# Authors
+# ======================================================
+# AUTHORS — GRSS UNICAMP (INSTITUTIONAL)
+# ======================================================
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+grss-unicamp:
+  name   : "IEEE GRSS UNICAMP Student Chapter"
+  bio    : "Official student chapter of the IEEE Geoscience and Remote Sensing Society at the University of Campinas (UNICAMP)."
+  avatar : "Logo_Fundo_branco.png"
+  uri    : "https://grssunicamp.github.io"
+  email  : "grssunicamp2@gmail.com"
