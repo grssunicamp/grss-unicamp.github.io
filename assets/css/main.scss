@@ -38,48 +38,110 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-
 /* =======================================================
-   GRSS UNICAMP — CUSTOM STYLES
+   GRSS UNICAMP — LAYOUT & ESTÉTICA
    ======================================================= */
 
-/* Banner (imagem principal) */
-.grss-banner {
+/* ---------- HERO / BANNER ---------- */
+.grss-hero {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.grss-hero img {
   width: 100%;
-  max-width: 1100px;
   height: auto;
   display: block;
-  margin: 2rem auto;
-  border-radius: 10px;
+  object-fit: cover;
 }
 
-/* Slider automático (sem JavaScript) */
-.grss-slider {
-  position: relative;
-  max-width: 900px;
-  margin: 2rem auto;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.grss-slider img {
+.grss-hero-text {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  animation: grssSlide 6s infinite;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
 }
 
-.grss-slider img:nth-child(1) { animation-delay: 0s; }
-.grss-slider img:nth-child(2) { animation-delay: 3s; }
+.grss-hero-text h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+}
 
-@keyframes grssSlide {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  40%  { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 0; }
+.grss-hero-text p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  opacity: 0.95;
+}
+
+/* ---------- SEÇÕES ---------- */
+.grss-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.grss-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.grss-section p {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* ---------- CAROUSEL ---------- */
+.grss-carousel {
+  max-width: 900px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grss-carousel-track {
+  display: flex;
+  width: 200%;
+  animation: grssCarousel 8s infinite ease-in-out;
+}
+
+.grss-carousel-track img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Animação automática */
+@keyframes grssCarousel {
+  0%   { transform: translateX(0); }
+  45%  { transform: translateX(0); }
+  55%  { transform: translateX(-50%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---------- MOBILE AJUSTES ---------- */
+@media (max-width: 768px) {
+  .grss-section p {
+    text-align: left;
+  }
+
+  .grss-carousel-track {
+    width: 200%;
+  }
+
+  .grss-carousel-track img {
+    width: 100%;
+  }
 }
