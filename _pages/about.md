@@ -1,7 +1,8 @@
 ---
 layout: single
-title: "IEEE GRSS UNICAMP Student Chapter"
-author_profile: true
+title: "About"
+permalink: /about/
+author_profile: false
 ---
 
 <div class="grss-hero">
