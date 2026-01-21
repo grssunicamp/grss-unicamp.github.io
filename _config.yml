@@ -1,26 +1,24 @@
 # Basic Site Settings
-locale                   : "pt-BR"
-site_theme               : "default"
-title                    : "IEEE GRSS UNICAMP Student Chapter"
-title_separator          :  "|"
-name                     : &name "GRSS UNICAMP"
-description              : &description "IEEE Geoscience and Remote Sensing Society Student Chapter at the University of Campinas (UNICAMP)"
-url                      : https://grssunicamp.github.io
-repository               : "https://grssunicamp.github.io"
+locale: "pt-BR"
+site_theme: "default"
+title: "IEEE GRSS UNICAMP Student Chapter"
+title_separator: "|"
+name: &name "GRSS UNICAMP"
+description: &description "IEEE Geoscience and Remote Sensing Society Student Chapter at the University of Campinas (UNICAMP)"
+url: https://grssunicamp.github.io
+repository: "https://grssunicamp.github.io"
 
 author:
-  avatar           : "Logo_Fundo_branco.png"
-  name             : "IEEE GRSS UNICAMP Student Chapter"
-  bio              : "The GRSS UNICAMP Student Chapter is a group composed of geology and geography students sponsored by the IEEE Geoscience and Remote Sensing Society. Founded in 2010, the chapter aims to promote and support activities related to remote sensing and geoprocessing, as well as the dissemination of new technologies and information services."
-  location         : "Campinas, São Paulo, Brazil"
-  employer         : "University of Campinas (UNICAMP)"
-  uri              : https://www.ieee-grss.org
-  email            : "grssunicamp2@gmail.com"
-
-  # Academic websites
-  instagram        : "https://www.instagram.com/grss_unicamp/"
-  LinkedIn         : "https://www.linkedin.com/company/grss-unicamp-student-chapter"
-  Facebook         : "https://www.facebook.com/grssunicamp/"
+  avatar: "Logo_Fundo_branco.png"
+  name: "IEEE GRSS UNICAMP Student Chapter"
+  bio: "The GRSS UNICAMP Student Chapter is a group composed of geology and geography students sponsored by the IEEE Geoscience and Remote Sensing Society. Founded in 2010, the chapter aims to promote and support activities related to remote sensing and geoprocessing, as well as the dissemination of new technologies and information services."
+  location: "Campinas, São Paulo, Brazil"
+  employer: "University of Campinas (UNICAMP)"
+  uri: https://www.ieee-grss.org
+  email: "grssunicamp2@gmail.com"
+  instagram: "https://www.instagram.com/grss_unicamp/"
+  LinkedIn: "https://www.linkedin.com/company/grss-unicamp-student-chapter"
+  Facebook: "https://www.facebook.com/grssunicamp/"
 
 
 # Reading Files
@@ -82,77 +80,13 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
-# These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
