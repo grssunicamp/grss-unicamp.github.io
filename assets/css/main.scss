@@ -41,3 +41,22 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* === GRSS UNICAMP custom styles === */
+
+.author__avatar img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-container {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.slides {
+  width: 100%;
+  display: none;
+  border-radius: 8px;
+}
