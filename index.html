@@ -67,10 +67,12 @@
 <!-- ======= HERO ======= -->
 <section id="hero" style="position:relative; height:100vh; overflow:hidden;">
 
-  <!-- GIF -->
-  <img
-    src="assets/img/GRSS/Inicial_gif.gif"
-    alt="IEEE GRSS STUDENT CHAPTER UNICAMP"
+  <!-- Vídeo -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
     style="
       position:absolute;
       top:0;
@@ -79,8 +81,10 @@
       height:100%;
       object-fit:cover;
       z-index:1;
-    "
-  >
+    ">
+    <source src="assets/img/GRSS/inicial.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
 
  
 <!-- Texto -->
@@ -192,31 +196,38 @@
     <div class="row justify-content-center">
 
       <!-- ===== Event 1: Technical Seminar – QGIS ===== -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 shadow-sm">
-          <img
-            src="assets/img/GRSS/event1.jpg"
-            class="card-img-top"
-            alt="Technical Seminar QGIS - GRSS UNICAMP"
-          >
+      <!-- ===== Event: Earth Observation and Environmental Monitoring Forum ===== -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 shadow-sm">
+        <img
+          src="assets/img/GRSS/forum.png"
+          class="card-img-top"
+          alt="Earth Observation and Environmental Monitoring Forum - GRSS UNICAMP"
+        >
 
-          <div class="card-body">
-            <h5 class="card-title">Technical Seminar – QGIS</h5>
+        <div class="card-body">
+          <h5 class="card-title">
+            Earth Observation and Environmental Monitoring Forum
+          </h5>
 
-            <p class="card-text">
-              The IEEE GRSS UNICAMP Student Chapter hosted a technical seminar in
-              partnership with <strong>GeoAplicada</strong>, featuring a hands-on
-              QGIS training led by Prof. Jocilene Barros.
-            </p>
+          <p class="fst-italic text-center">
+            April 2026 (Earth Day) • UNICAMP, Brazil
+          </p>
 
-            <p class="card-text">
-              The activity provided students from the Institute of Geosciences at
-              UNICAMP with practical experience in geoprocessing workflows,
-              bridging theory and real-world GIS applications.
-            </p>
-          </div>
+          <p class="card-text">
+            An interdisciplinary forum focused on Earth observation technologies and
+            environmental monitoring, promoting discussions on current challenges and
+            innovative solutions.
+          </p>
+
+          <p class="text-center mt-3">
+            <span class="badge rounded-pill bg-primary">
+              Registration link coming soon
+            </span>
+          </p>
         </div>
       </div>
+    </div>
 
       <!-- ===== Event 2: CPE Experience ===== -->
       <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
@@ -315,7 +326,7 @@
     </p>
 
     <div class="d-flex justify-content-center gap-3 mt-3">
-      <a href="mailto:grssunicamp2@gmail.com"
+      <a href="mailto:grssunicamp@gmail.com"
          class="btn"
          style="border:2px solid #00629B; color:#00629B;">
         <i class="bi bi-envelope"></i> Email

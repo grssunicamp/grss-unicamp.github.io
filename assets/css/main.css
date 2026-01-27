@@ -1959,3 +1959,9 @@ button {
   object-fit: cover;
   border-radius: 50%;
 }
+
+#events-preview .card-img-top {
+  height: 220px;        /* ajuste se quiser mais alto/baixo */
+  object-fit: cover;    /* corta sem distorcer */
+  width: 100%;
+}
