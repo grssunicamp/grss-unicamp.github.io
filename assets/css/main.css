@@ -1950,7 +1950,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: #00629B;
 }
 
 .trainers .member-img img {
@@ -1964,4 +1964,39 @@ button {
   height: 220px;        /* ajuste se quiser mais alto/baixo */
   object-fit: cover;    /* corta sem distorcer */
   width: 100%;
+}
+
+/* garante que o item do idioma se comporte como os outros links */
+.navmenu ul li.lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.navmenu ul li.lang-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 10px;
+  margin-top: 0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  background-color: #00629B;  /* azul preenchido */
+  color: #ffffff;
+
+  border: 1px solid #00629B;
+  border-radius: 4px;
+
+  line-height: 1.2;
+}
+
+/* hover */
+.navmenu ul li.lang-switch a:hover {
+  background-color: #03433c;
+  border-color: #004a75;
+  color: #ffffff;
+}
+
 }
